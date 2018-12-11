@@ -1,0 +1,21 @@
+[{"title": "n", 
+"fields": ["n1", "n2"], 
+"abstract": "long text", 
+"citation": "Citations (59) or Not cited", 
+"year": "2008", 
+"departments": ["dp1", "dp2", "Microsoft"], 
+"conf": "aaai", 
+"authors": ["name1.....url1", "name2.....url2", "name3....url3", ], 
+"pages": 6
+},
+{"title": "000000000", 
+"fields": ["n1", "n2"], 
+"abstract": "long text", 
+"citation": "Citations (59) or Not cited", 
+"year": "2008", 
+"departments": ["dp1", "dp2", "Microsoft"], 
+"conf": "aaai", 
+"authors": ["name1.....url1", "name2.....url2", "name3....url3", ], 
+"pages": 6
+}
+]

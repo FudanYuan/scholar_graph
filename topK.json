@@ -1,0 +1,186 @@
+{
+    "code": 0,
+    "msg": "成功",
+    "data": {
+        "type": "force",
+        "categories": [
+            {
+                "base": "",
+                "keyword": {},
+                "name": "paper"
+            },
+            {
+                "base": "",
+                "keyword": {},
+                "name": "author"
+            },
+            {
+                "base": "",
+                "keyword": {},
+                "name": "conference"
+            },
+            {
+                "base": "",
+                "keyword": {},
+                "name": "field"
+            },
+            {
+                "base": "",
+                "keyword": {},
+                "name": "department"
+            }
+        ],
+        "nodes": [
+            {
+                "category": 1,
+                "name": "Minh-Thai Trinh",
+                "value": 1
+            },
+            {
+                "category": 0,
+                "name": "Automatic induction proofs of data-structures in imperative programs.",
+                "value": 1
+            },
+            {
+                "category": 1,
+                "name": "Joxan Jaffar",
+                "value": 1
+            },
+            {
+                "category": 0,
+                "name": "S3: A Symbolic String Solver for Vulnerability Detection in Web Applications.",
+                "value": 1
+            },
+            {
+                "category": 1,
+                "name": "Duc-Hiep Chu",
+                "value": 1
+            },
+            {
+                "category": 0,
+                "name": "Progressive Reasoning over Recursively-Defined Strings.",
+                "value": 1
+            },
+            {
+                "category": 1,
+                "name": "Andrew E. Santosa",
+                "value": 1
+            },
+            {
+                "category": 0,
+                "name": "TRACER: A Symbolic Execution Tool for Verification.",
+                "value": 1
+            },
+            {
+                "category": 1,
+                "name": "Vijayaraghavan Murali",
+                "value": 1
+            },
+            {
+                "category": 0,
+                "name": "Boosting concolic testing via interpolation.",
+                "value": 1
+            },
+            {
+                "category": 1,
+                "name": "Jorge A. Navas",
+                "value": 1
+            },
+            {
+                "category": 0,
+                "name": "A path-sensitively sliced control flow graph.",
+                "value": 1
+            },
+            {
+                "category": 1,
+                "name": "Razvan Voicu",
+                "value": 1
+            },
+            {
+                "category": 0,
+                "name": "Efficient Memoization for Dynamic Programming with Ad-Hoc Constraints.",
+                "value": 1
+            },
+            {
+                "category": 0,
+                "name": "A Complete Method for Symmetry Reduction in Safety Verification.",
+                "value": 1
+            }
+        ],
+        "links": [
+            {
+                "source": 0,
+                "target": 1
+            },
+            {
+                "source": 2,
+                "target": 1
+            },
+            {
+                "source": 2,
+                "target": 3
+            },
+            {
+                "source": 0,
+                "target": 3
+            },
+            {
+                "source": 4,
+                "target": 5
+            },
+            {
+                "source": 2,
+                "target": 5
+            },
+            {
+                "source": 6,
+                "target": 7
+            },
+            {
+                "source": 2,
+                "target": 7
+            },
+            {
+                "source": 8,
+                "target": 9
+            },
+            {
+                "source": 2,
+                "target": 9
+            },
+            {
+                "source": 10,
+                "target": 9
+            },
+            {
+                "source": 8,
+                "target": 11
+            },
+            {
+                "source": 2,
+                "target": 11
+            },
+            {
+                "source": 12,
+                "target": 13
+            },
+            {
+                "source": 2,
+                "target": 13
+            },
+            {
+                "source": 10,
+                "target": 7
+            },
+            {
+                "source": 4,
+                "target": 14
+            },
+            {
+                "source": 2,
+                "target": 14
+            }
+        ],
+        "time": 1032
+    }
+}
