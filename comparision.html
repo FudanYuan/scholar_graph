@@ -830,6 +830,15 @@
                         formatter: '{b}'
                     }
                 },
+                edgeSymbol: ['circle', 'arrow'],
+                edgeSymbolSize: [4, 5],
+                edgeLabel: {
+                    normal: {
+                        textStyle: {
+                            fontSize: 10
+                        }
+                    }
+                },
                 draggable: true,
                 data: data.nodes.map(function (node, idx) {
                     node.id = idx;
