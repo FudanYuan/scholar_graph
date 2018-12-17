@@ -390,6 +390,7 @@
 </div>
 
 <!--Global Javascript -->
+<script src="js/index.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper/popper.min.js"></script>
 <script src="js/tether.min.js"></script>
@@ -403,7 +404,6 @@
 <script src="js/echarts.min.js"></script>
 <script>
     $(document).ready(function () {
-        var host = 'http://10.131.247.206:8080';
         // 删除作者
         $('#author-delete-btn').click(function () {
             var authorName = $('.author-delete #author-name').val();
@@ -411,7 +411,7 @@
             $('#author-delete-result').show();
             $.ajax({
                 type: 'POST',
-                url: host + '/SQL/author/delete',
+                url: mysql_host + '/SQL/author/delete',
                 data: {
                     type: 1,
                     authorName: authorName,
@@ -430,7 +430,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: host + '/neo4j/author/delete',
+                url: neo4j_host + '/neo4j/author/delete',
                 data: {
                     type: 1,
                     authorName: authorName,
@@ -461,7 +461,7 @@
             $('#paper-delete-result').show();
             $.ajax({
                 type: 'POST',
-                url: host + '/SQL/paper/delete',
+                url: mysql_host + '/SQL/paper/delete',
                 data: {
                     type: 2,
                     authorName: authorName,
@@ -486,7 +486,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: host + '/neo4j/paper/delete',
+                url: neo4j_host + '/neo4j/paper/delete',
                 data: {
                     type: 2,
                     authorName: authorName,
@@ -516,7 +516,7 @@
             $('#conference-delete-result').show();
             $.ajax({
                 type: 'POST',
-                url: host + '/SQL/conference/delete',
+                url: mysql_host + '/SQL/conference/delete',
                 data: {
                     type: 3,
                     conference: conference
@@ -534,7 +534,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: host + '/neo4j/conference/delete',
+                url: neo4j_host + '/neo4j/conference/delete',
                 data: {
                     type: 3,
                     conference: conference

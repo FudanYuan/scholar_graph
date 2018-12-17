@@ -404,6 +404,7 @@
 </div>
 
 <!--Global Javascript -->
+<script src="js/index.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper/popper.min.js"></script>
 <script src="js/tether.min.js"></script>
@@ -418,7 +419,6 @@
 
 <script>
     $(document).ready(function () {
-        var host = 'http://10.131.247.206:8080';
         // 插入作者
         $('#author-insert-btn').click(function () {
             var authorName = $('.author-insert #author-name').val();
@@ -427,7 +427,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: host + '/SQL/author/insert',
+                url: mysql_host + '/SQL/author/insert',
                 data: {
                     type: 1,
                     authorName: authorName,
@@ -436,18 +436,18 @@
                 contentType: 'application/json',
                 dataType: 'json',
                 success: function (res) {
-                    if(res.code == 0){
-                        // 渲染Neo4j返回结果
+                    // if(res.code == 0){
+                        // 渲染SQL返回结果
                         $('#author-insert-result .SQL').text('MySQL用时：' + res.data.time + 'ms');
-                    } else{
-
-                    }
+                    // } else{
+                    //     alert('insert fail')
+                    // }
                 }
             });
 
             $.ajax({
                 type: 'POST',
-                url: host + '/neo4j/author/insert',
+                url: neo4j_host + '/neo4j/author/insert',
                 data: {
                     type: 1,
                     authorName: authorName,
@@ -459,6 +459,7 @@
                         // 渲染Neo4j返回结果
                         $('#author-insert-result .Neo4j').text('Neo4j用时：' + res.data.time + 'ms');
                     } else{
+                        alert('insert fail')
 
                     }
                 }
@@ -479,7 +480,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: host + '/SQL/paper/insert',
+                url: mysql_host + '/SQL/paper/insert',
                 data: {
                     type: 2,
                     authorName: authorName,
@@ -493,18 +494,18 @@
                 },
                 dataType: 'json',
                 success: function (res) {
-                    if(res.code == 0){
-                        // 渲染Neo4j返回结果
+                    // if(res.code == 0){
+                        // 渲染SQL返回结果
                         $('#paper-insert-result .SQL').text('MySQL用时：' + res.data.time + 'ms');
-                    } else{
+                    // } else{
 
-                    }
+                    // }
                 }
             });
 
             $.ajax({
                 type: 'POST',
-                url: host + '/neo4j/paper/insert',
+                url: neo4j_host + '/neo4j/paper/insert',
                 data: {
                     type: 2,
                     authorName: authorName,
@@ -523,7 +524,7 @@
                         // 渲染Neo4j返回结果
                         $('#paper-insert-result .Neo4j').text('Neo4j用时：' + res.data.time + 'ms');
                     } else{
-
+                        alert('insert fail')
                     }
                 }
             });
@@ -536,7 +537,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: host + '/SQL/conference/insert',
+                url: mysql_host + '/SQL/conference/insert',
                 data: {
                     type: 3,
                     conference: conference
@@ -544,18 +545,18 @@
                 contentType: 'application/json',
                 dataType: 'json',
                 success: function (res) {
-                    if(res.code == 0){
-                        // 渲染Neo4j返回结果
+                    // if(res.code == 0){
+                        // 渲染sql返回结果
                         $('#conference-insert-result .SQL').text('MySQL用时：' + res.data.time + 'ms');
-                    } else{
+                    // } else{
 
-                    }
+                    // }
                 }
             });
 
             $.ajax({
                 type: 'POST',
-                url: host + '/neo4j/conference/insert',
+                url: neo4j_host + '/neo4j/conference/insert',
                 data: {
                     type: 3,
                     conference: conference
@@ -566,7 +567,7 @@
                         // 渲染Neo4j返回结果
                         $('#conference-insert-result .Neo4j').text('Neo4j用时：' + res.data.time + 'ms');
                     } else{
-
+                        alert('insert fail')
                     }
                 }
             })

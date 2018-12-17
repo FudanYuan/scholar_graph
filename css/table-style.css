@@ -1,16 +1,11 @@
 table {
     position: relative;
-    top: 100px;
-    /*width: 70vw;*/
+    top: 150px;
+    width: 80%;
     color: #333;
-    border-width: 1px;
-    border-color: #666;
-    border-collapse: collapse;
-    margin: 0 auto;
-    text-align: center;
     display: none;
-/*    word-wrap:break-word;
-    word-break:break-all;*/
+    word-wrap:break-word;
+    word-break:break-all;
 }
 table th,
 table td {
@@ -19,15 +14,20 @@ table td {
     padding: 10px;
 }
 table th {
-    background-color: #585eaa;
+    background-color: #6a6da9;
     color: white;
 }
 
-table tr:nth-child(odd)
+table td
+{
+    min-width: 100px;
+}
+
+/*table tr:nth-child(odd)
 {
     background: #fff;
 }
 table tr:nth-child(even)
 {
     background: #F5FAFA;
-}
+}*/
